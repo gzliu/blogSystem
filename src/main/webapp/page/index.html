@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>myBootstrap</title>
+   <link href="../js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script type="text/javascript" src="../js/jquery/jquery-2.1.1.min.js"></script>
+   <script src="../js/bootstrap/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../js/angular.js"></script>
+   <style type="text/css"></style>
+   <script type="text/javascript">
+	 $(function(){
+		$("#changeLi").click(function(){
+			$("#changeLi").removeClass('list-group-item');
+			$("#changeLi").addClass('list-group-item active');
+		});
+		
+	 });
+   </script>
+</head>
+<body>
+
+<!-- <div ng-app="" ng-init="qty=1;cost=5">
+	<p>表达式2：{{ qty * cost }}</p>
+	<p>在输入框中尝试输入：</p>
+ 	<p>姓名：<input type="text" ng-model="name"></p>
+ 	<p ng-bind="name"></p>
+ 	<p>表达式：{{10+9}}</p>
+ 	总价：<span ng-bind="qty * cost"></span></p>
+</div> -->
+
+	<div class="container-fluid">
+		
+       <h1>Hello, world!</h1>
+		<div class="row-fluid">
+			<div class="col-xs-6  col-sm-6">
+				<ul class="list-group">
+				   <li class="list-group-item active">免费域名注册</li>
+				   <li id="changeLi" class="list-group-item">免费 Window 空间托管</li>
+				   <li class="list-group-item">图像的数量</li>
+				   <li class="list-group-item">24*7 支持</li>
+				   <li class="list-group-item">每年更新成本</li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div>test</div>
+			</div>		
+		</div>
+	
+	</div>
+	
+</body>
+</html>
